@@ -1,0 +1,10 @@
+- name: El meu primer playbook
+  hosts: hosts
+  become: true
+  task:
+    - name: Ping my hosts
+      ansible.builtin.ping:
+
+    - name: Print message
+      ansible.builtin.ping:
+        msg: Hello world

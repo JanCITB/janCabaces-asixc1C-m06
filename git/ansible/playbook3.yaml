@@ -1,0 +1,13 @@
+- name: iotop i  glances
+  hosts: hosts
+  become: true
+  tasks:
+        - name: Install iotop
+      apt:
+        name: iotop
+        state: present
+
+    - name: Install glances
+      apt:
+        name: glances
+        state: present
